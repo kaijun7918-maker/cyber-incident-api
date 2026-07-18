@@ -51,7 +51,6 @@ BASE_DIRECTORY = (
 
 MODEL_PATH = (
     BASE_DIRECTORY /
-    "model" /
     "model.joblib"
 )
 
