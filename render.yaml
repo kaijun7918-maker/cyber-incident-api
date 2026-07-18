@@ -2,9 +2,11 @@ services:
   - type: web
     name: cyber-incident-resolution-api
     runtime: docker
+    plan: free
+    region: singapore
     dockerfilePath: ./Dockerfile
     healthCheckPath: /health
-    autoDeploy: true
+    autoDeployTrigger: commit
 
     envVars:
       - key: SPARK_DRIVER_MEMORY
