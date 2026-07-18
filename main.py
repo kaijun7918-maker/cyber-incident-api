@@ -230,4 +230,3 @@ def predict(data: CyberIncidentInput) -> PredictionOutput:
         model_type="Spark ML Random Forest Regressor (portable export)",
         spark_version=model.spark_version,
     )
-    
