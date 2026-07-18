@@ -3,20 +3,7 @@ services:
     name: cyber-incident-resolution-api
     runtime: docker
     plan: free
-    region: singapore
     dockerfilePath: ./Dockerfile
+    dockerContext: .
     healthCheckPath: /health
     autoDeployTrigger: commit
-
-    envVars:
-      - key: SPARK_DRIVER_MEMORY
-        value: 512m
-
-      - key: SPARK_LOCAL_IP
-        value: 127.0.0.1
-
-      - key: SPARK_LOCAL_HOSTNAME
-        value: localhost
-
-      - key: PYSPARK_PYTHON
-        value: python3
