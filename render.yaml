@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cyber-incident-resolution-api
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    autoDeployTrigger: commit
